@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "space.nickyblackburn.main"
+      "space.nickyblackburn.Main"
     ]
   },
   "mixins": [

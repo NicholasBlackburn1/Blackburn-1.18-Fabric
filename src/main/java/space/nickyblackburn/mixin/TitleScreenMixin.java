@@ -27,10 +27,9 @@ public class TitleScreenMixin  extends Screen{
 	@Inject(method="init()V", at=@At("RETURN"))
 
 	private void renderCustomWindowTitle(CallbackInfo ci) {
-		MinecraftClient.getInstance().getWindow().setTitle("Blackburn Hacked 1.17-B");
-		System.out.println("Hellow Foxy girl hacked mc");
+		MinecraftClient.getInstance().getWindow().setTitle("Blackburn Hacked 1.17-B");	
 	}
-
+	
 	@Inject(at = @At("TAIL"), method = "render()V")
 	public void render(MatrixStack matrices, int mouseX, int mouseY, float delta,CallbackInfo ci) {
 		
